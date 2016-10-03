@@ -206,7 +206,7 @@ body {
 .first-wrap {
     height: 100%;
     width: 100vw;
-    background: #ffffff url("../img/MG_2088.jpg") no-repeat fixed;
+    background: #ffffff url("../img/MG_2088.jpg");
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -251,15 +251,22 @@ body {
 }
 
 .down-arrow {
-    font-size: 40px;
-    color: #fff;
+    font-size: 70px;
+    color: #A27232;
+    margin-top: 5%;
+    opacity: 0.9;
+}
+.down-arrow:hover {
+  opacity: 1;
+  transition: 0.5s;
 }
 
 p {
     padding: 20px !important;
     letter-spacing: 0.45em!important;
     text-transform: uppercase!important;
-    background-color: rgba(0, 0, 0, 0.3)!important;
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    font-family: 'Audiowide', cursive!important;
 }
 
 .second-div {
