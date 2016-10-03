@@ -206,7 +206,7 @@ body {
 .first-wrap {
     height: 100%;
     width: 100vw;
-    background: #ffffff url("https://images.unsplash.com/photo-1445251836269-d158eaa028a6?fit=crop&fm=jpg&h=950&q=80&w=1920") no-repeat fixed;
+    background: #ffffff url("../img/test-chat.jpg") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -238,6 +238,7 @@ body {
     height: 100vh;
     width: 100vw;
     background-color: transparent;
+  }
     .first-inner-div {
         position: absolute;
         top: 50%;
@@ -246,6 +247,7 @@ body {
         text-align: center;
         color: #fff;
         font-size: 20px;
+      }
         .down-arrow {
             font-size: 40px;
             color: #fff;
@@ -256,14 +258,14 @@ body {
             text-transform: uppercase!important;
             background-color: rgba(0, 0, 0, 0.3)!important;
         }
-    }
-}
+
+
 
 .second-div {
     display: table;
     height: 50vh;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.3);}
     p {
         display: table-cell;
         vertical-align: middle;
@@ -272,7 +274,7 @@ body {
         letter-spacing: 0.45em;
         text-transform: uppercase;
     }
-}
+
 
 .third-div {
     display: table;
@@ -285,7 +287,7 @@ body {
     display: table;
     height: 50vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);}
     p {
         display: table-cell;
         vertical-align: middle;
@@ -295,7 +297,7 @@ body {
         letter-spacing: 0.45em;
         text-transform: uppercase;
     }
-}
+
 
 .fifth-div {
     display: table;
@@ -336,7 +338,7 @@ body {
 /* NEW UPDATE */
 
 .new-update {
-    padding: 20px;
+  margin-left: 50%;
     text-align: center;
 }
 
