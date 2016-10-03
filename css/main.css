@@ -217,7 +217,7 @@ body {
 .second-wrap {
     height: 100%;
     width: 100vw;
-    background: #ffffff url("../img/Est-ce-la-fin-du-clavier-Azerty-en-France.jpg") no-repeat fixed;
+    background: #ffffff url("../img/test-chat.jpg") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -228,7 +228,7 @@ body {
 .third-wrap {
     height: 100%;
     width: 100vw;
-    background: #ffffff url("https://images.unsplash.com/photo-1443827423664-eac70d49dd0d?fit=crop&fm=jpg&h=950&q=80&w=1920") no-repeat fixed;
+    background: #ffffff url("../img/Est-ce-la-fin-du-clavier-Azerty-en-France.jpg") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
 }
@@ -267,11 +267,12 @@ p {
     text-transform: uppercase!important;
     background-color: rgba(0, 0, 0, 0.7)!important;
     font-family: 'Audiowide', cursive!important;
+    color: #A27232!important;
 }
 
 .second-div {
     display: table;
-    height: 50vh;
+    height: 30vh;
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.3);
 }
@@ -287,14 +288,14 @@ p {
 
 .third-div {
     display: table;
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
     background-color: transparent;
 }
 
 .fourth-div {
     display: table;
-    height: 50vh;
+    height: 30vh;
     width: 100vw;
     background-color: rgba(0, 0, 0, 0.3);
 }
@@ -311,7 +312,7 @@ p {
 
 .fifth-div {
     display: table;
-    height: 50vh;
+    height: 70vh;
     width: 100vw;
     background-color: transparent;
 }
@@ -326,7 +327,7 @@ p {
     text-align: center;
     line-height: 30px;
     background-color: rgb(255, 255, 255);
-    color: #000;
+    color: #A27232;
     cursor: pointer;
     border: 0;
     border-radius: 2px;
@@ -337,7 +338,7 @@ p {
 
 #back-to-top:hover {
     background-color: rgba(255, 255, 255, 0.8);
-    color: #000;
+    color: #A27232;
 }
 
 #back-to-top.show {
