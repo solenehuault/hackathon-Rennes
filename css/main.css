@@ -990,3 +990,95 @@ a:hover {
     letter-spacing: 0.45em;
     text-transform: uppercase;
 }
+
+
+-/* CSS DE LA 4EME PAGE*/
+.six-wrap {
+   height: 100%;
+   width: 100vw;
+   background: #ffffff  url("../img/4pgbg.jpg") no-repeat fixed;
+   background-size: cover;
+   background-position: 50% 50%;
+}
+
+.seven-div {
+   display: table;
+   height: 30vh;
+   width: 100vw;
+   background-color: rgba(0, 0, 0, 0.3);
+}
+
+
+.eight-div {
+   display: table;
+   height: 70vh;
+   width: 100vw;
+   background-color: transparent;
+}
+
+.mod {
+background-color: rgba(0, 0, 0, 0.7)!important;
+margin-top: 5%;
+text-align: center;
+color: #A27232 ;
+font-size: 1em;
+font-family: 'Audiowide', cursive!important;
+}
+.adptmap {
+ margin-top: 10%;
+}
+
+/* ##################################################################### */
+
+
+/* ############################   TABLETS   ############################ */
+
+
+/* ##################################################################### */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+ .adptmap{
+   height: 600px;
+   width: 720px;
+
+
+ }
+}
+
+
+/* ##################################################################### */
+
+
+/* ############################   DESKTOPS   ########################### */
+
+
+/* ##################################################################### */
+
+
+/* Medium devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {}
+
+
+/* ##################################################################### */
+
+
+/* ########################   LARGE DESKTOPS   ######################### */
+
+
+/* ##################################################################### */
+
+
+/* Large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+ .adptmap{
+   height: 600px;
+   width: 1150px;
+
+
+ }
+}
