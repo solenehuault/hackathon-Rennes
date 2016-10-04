@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
@@ -69,36 +70,44 @@
             </p>
         </div>
         <div class="fifth-div">
-            <!--<a href="" class="button">me demander ?</a>
-            <div class="modal-overlay">
-                <div class="modal-wrapper">
-                    <label class="close" for=""></label>
-                    <h2 id="modal-title">Envoyez-nous un message</h2>
-                    <form class="message-form" action="">
-                        <div class="input-box">
-                            <label for="" class="input-label">Nom</label>
-                            <input type="text" class="input-text">
-                            <hr class="underline">
-                            <hr class="underline-focus">
-                        </div>
-                        <div class="input-box">
-                            <label for="" class="input-label">E-mail</label>
-                            <input type="text" class="input-text">
-                            <hr class="underline">
-                            <hr class="underline-focus">
-                        </div>
-                        <div class="input-box textarea">
-                            <label for="" class="input-label">Message</label>
-                            <textarea class="input-text"></textarea>
-                            <hr class="underline">
-                            <hr class="underline-focus">
-                        </div>
-                        <div class="input-button">
-                            <button class="button">Envoyer</button>
-                        </div>
-                    </form>
+            
+            <div id="container">
+                <div id="demo">
+
+                    <h6 class="padabove">I created this simple contact forum for myself as a template. Feel free to use it if you'd like. </h6>
                 </div>
-            </div>-->
+
+                <div id="contact-wrap">
+                    <div id="contact-area">
+
+                        <form method="post" action="contactengine.php">
+
+                            <input type="text" name="Nom" id="Name" placeholder="Nom" />
+
+                            <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" />
+
+                            <input type="text" name="Email" id="Email" placeholder="Email" />
+
+                            <input type="text" name="Email" id="Email" placeholder="">
+                            <select>
+                                <option>je suis?
+                                    <option>Developpeur web
+                                        <option>Réferenciel métier
+                                            <option>Designer
+                                                <option>Big Data
+                            </select>
+                            </input>
+
+                            <textarea name="Message" rows="20" cols="20" id="Message" placeholder="Message"></textarea>
+
+                            <input type="submit" name="submit" value="j'y vais" class="submit-button" />
+                        </form>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
         </div>
     </div>
 
