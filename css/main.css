@@ -308,6 +308,46 @@ p {
     background-color: transparent;
 }
 
+
+.six-wrap {
+    display: table;
+    height: 70vh;
+    width: 100vw;
+    background-color: transparent;
+}
+.seven-div {
+    display: table;
+    width: 100vw;
+    /*background-color: rgba(0, 0, 0, 0.3)!important;*/
+}
+.eight-div {
+    display: table;
+    height: 70vh;
+    background: #ffffff
+url("../img/sunset-over-district.jpg") no-repeat fixed;
+    width: 100vw;
+    background-color: transparent!;
+    background-size: cover;
+    background-position: 50% 50%;
+    "background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mod {
+background-color: rgba(0, 0, 0, 0.7)!important;
+margin-top: 5%;
+text-align: center;
+color: #A27232 ;
+font-size: 1em;
+font-family: 'Audiowide', cursive!important;
+}
+
+.adptmap {
+ display: block;
+ margin: 0 auto;
+  margin-top: 50px;
+  width: 75%;
+}
+
 #back-to-top {
     position: fixed;
     bottom: 40px;
@@ -566,7 +606,7 @@ p {
 
 #container {
     margin: auto;
-    width: 800px;
+    width: 100%;
     margin-bottom: 50px;
     overflow: auto;
 }
@@ -620,22 +660,24 @@ p {
     font-family: 'Lato', calibri, arial;
     font-size: 16px;
     font-weight: 300;
-    width: 402px;
+    width: 100%;
     color: #fff;
     overflow: auto;
     float: left;
+    margin:0 auto;
 }
 
 #contact-area {
     margin-left: 3px;
-    width: 342px;
+    width: 100%;
     padding: 20px;
+    margin:0 auto;
 }
 
 #contact-area input,
 #contact-area textarea {
     padding: 5px;
-    width: 342px;
+    width: 100%;
     font-family: 'Lato', calibri, arial;
     font-size: 17px;
     font-weight: 300;
@@ -668,7 +710,7 @@ p {
 
 #contact-area input.submit-button {
     font-family: 'Lato', calibri, arial;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
     width: 100px;
@@ -683,6 +725,8 @@ p {
     -o-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    float: right;
+    font-weight: bold;
 }
 
 #contact-area input.submit-button:hover {
@@ -729,7 +773,7 @@ label {
 
 select {
     padding: 5px;
-    width: 342px;
+    width: 100%;
     font-family: 'Lato', calibri, arial;
     font-size: 17px;
     font-weight: 300;
@@ -782,40 +826,9 @@ a:hover {
 
 
 -/* CSS DE LA 4EME PAGE*/
-.six-wrap {
-   height: 100%;
-   width: 100vw;
-   background: #ffffff  url("../img/4pgbg.jpg") no-repeat fixed;
-   background-size: cover;
-   background-position: 50% 50%;
-}
-
-.seven-div {
-   display: table;
-   height: 30vh;
-   width: 100vw;
-   background-color: rgba(0, 0, 0, 0.7) !important;
-}
 
 
-.eight-div {
-   display: table;
-   height: 70vh;
-   width: 100vw;
-   background-color: transparent;
-}
 
-.mod {
-background-color: rgba(0, 0, 0, 0.7)!important;
-margin-top: 5%;
-text-align: center;
-color: #A27232 ;
-font-size: 1em;
-font-family: 'Audiowide', cursive!important;
-}
-.adptmap {
- margin-top: 10%;
-}
 
 /* ##################################################################### */
 
@@ -828,46 +841,11 @@ font-family: 'Audiowide', cursive!important;
 
 /* Small devices (tablets, 768px and up) */
 
-@media (min-width: 768px) {
+@media (max-width: 1200px) {
  .adptmap{
-   height: 600px;
-   width: 720px;
-
-
- }
-}
-
-
-/* ##################################################################### */
-
-
-/* ############################   DESKTOPS   ########################### */
-
-
-/* ##################################################################### */
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {}
-
-
-/* ##################################################################### */
-
-
-/* ########################   LARGE DESKTOPS   ######################### */
-
-
-/* ##################################################################### */
-
-
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {
- .adptmap{
-   height: 600px;
-   width: 1150px;
-
-
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 30px;
  }
 }
