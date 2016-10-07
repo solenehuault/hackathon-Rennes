@@ -3,7 +3,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #000;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -93,6 +93,10 @@ textarea {
    ========================================================================== */
 
 
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
 
 /* SEPARATOR DIV */
 
@@ -125,6 +129,7 @@ textarea {
     margin-bottom: 20px;
     margin-left: 18px;
 }
+
 
 /* First Wrap Background */
 
@@ -160,13 +165,16 @@ textarea {
     text-transform: uppercase;
     background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 15px;
 }
 
-.first-inner-div p:hover {
+.first-inner-div h1:hover {
     background-color: white;
-    color: #222 !important;
+    color: #000 !important;
     font-family: 'Audiowide', cursive;
 }
+
 
 /* Second Wrap Background */
 
@@ -186,11 +194,11 @@ textarea {
 
 .block {
     background-color: whitesmoke;
-    color: #222;
+    color: #000;
 }
 
 .block:hover {
-    background-color: #222;
+    background-color: #000;
     color: white;
 }
 
@@ -215,7 +223,7 @@ textarea {
 
 .participant {
     margin-bottom: 20px;
-    background-color: #222;
+    background-color: #000;
     color: white;
     text-align: center;
     border: 1px solid whitesmoke;
@@ -228,7 +236,9 @@ textarea {
     text-align: center;
     text-transform: uppercase;
     font-size: 1.2em;
+    cursor: pointer;
 }
+
 
 /* Third Wrap Background */
 
@@ -236,7 +246,7 @@ textarea {
     background: #ffffff url("../img/header.png") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
-    background-color: #222;
+    background-color: #000;
     width: 100%;
 }
 
@@ -250,24 +260,10 @@ textarea {
     font-family: 'Audiowide', cursive;
 }
 
-
-.third-div {
-    display: table;
-    height: 70vh;
-    width: 100vw;
-    background-color: transparent;
-}
-
 .fourth-div {
     display: table;
     background-color: rgba(0, 0, 0, 0.3);
     padding-left: 30px;
-}
-
-.fifth-div {
-    display: table;
-    height: 70vh;
-    background-color: transparent;
 }
 
 .six-wrap {
@@ -288,12 +284,6 @@ textarea {
     font-family: 'Audiowide', cursive;
 }
 
-.seven-div {
-    display: table;
-    width: 100vw;
-    /*background-color: rgba(0, 0, 0, 0.3)!important;*/
-}
-
 .eight-div {
     display: table;
     height: 70vh;
@@ -301,17 +291,6 @@ textarea {
     background-color: transparent!;
     background-size: cover;
     background-position: 50% 50%;
-    "background-color: rgba(255, 255, 255, 0.3);
-
-}
-
-.mod {
-    background-color: rgba(0, 0, 0, 0.7)!important;
-    margin-top: 5%;
-    text-align: center;
-    color: #A27232;
-    font-size: 1em;
-    font-family: 'Audiowide', cursive!important;
 }
 
 .adptmap {
@@ -321,90 +300,7 @@ textarea {
     width: 75%;
     filter: saturate(0);
     opacity: 0.9;
-}
-
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-    background-color: rgb(255, 255, 255);
-    color: #A27232;
-    cursor: pointer;
-    border: 0;
-    border-radius: 2px;
-    text-decoration: none;
-    transition: opacity 0.2s ease-out;
-    opacity: 0;
-}
-
-#back-to-top:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #A27232;
-}
-
-#back-to-top.show {
-    opacity: 1;
-}
-
-
-/* NEW UPDATE */
-
-.new-update {
-    margin-left: 50%;
-    text-align: center;
-}
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
-}
-
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+    margin-bottom: 100px;
 }
 
 
@@ -413,100 +309,6 @@ textarea {
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
 *:focus {
     outline: 0;
-}
-
-
-/*html {
-    height: 100%;
-}*/
-
-
-/*body {
-    background: #858d98;
-    /* Old browsers */
-
-
-/*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#858d98', endColorstr='#4a525d', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-
-/*background: -moz-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* FF3.6+ */
-
-
-/*background: -webkit-gradient(radial, top top, 0px, top top, 100%, color-stop(1%, #858d98), color-stop(99%, #4a525d));
-    /* Chrome,Safari4+ */
-
-
-/*background: -webkit-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Chrome10+,Safari5.1+ */
-
-
-/*background: -o-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Opera 12+ */
-
-
-/*background: -ms-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* IE10+ */
-
-
-/*background: radial-gradient(ellipse at top, #858d98 1%, #4a525d 99%);
-    /* W3C */
-
-
-/*.dim:hover {
-    margin-top: 5px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    /* For IE8 and earlier */
-
-#container {
-    margin: auto;
-    width: 100%;
-    margin-bottom: 50px;
-    overflow: auto;
-}
-
-#demo {
-    width: 300px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px;
-    text-align: left;
-    background: none;
-    overflow: auto;
-    float: left;
-    margin-left: 40px;
-    color: #fff;
-}
-
-#demo p {
-    font-family: 'Lato', calibri, arial;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    color: #fff;
-}
-
-#demo h1 {
-    font-family: 'Lato', calibri, arial;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#demo img {
-    display: block;
-    float: left;
-    margin-right: 10px;
-    border: 0px solid #888;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
 }
 
 
@@ -556,7 +358,7 @@ textarea {
 #contact-area textarea:focus,
 #contact-area input:focus {
     background-color: whitesmoke;
-    color: #222;
+    color: #000;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-bottom: 1px solid #fff;
@@ -585,7 +387,7 @@ textarea {
 }
 
 #contact-area input.submit-button:hover {
-    color: #222;
+    color: #000;
     background-color: whitesmoke;
 }
 
@@ -642,15 +444,7 @@ a:hover {
 }
 
 
-/* gestion des logos partenaires*/
-
-.info {
-    color: white !important;
-    font-size: 15px;
-}
-
-
-/* gestion des logos partenaires*/
+/*gestion des logos partenaires
 
 .partenaire {
     height: 50px;
@@ -661,46 +455,14 @@ a:hover {
     background-color: white !important;
 }
 
--
-/* CSS DE LA 4EME PAGE*/
-
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
 .invisible {
     visibility: hidden;
-}
-
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
+}*/
 
 footer {
     height: 75px;
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    background-color: #000;
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -810,11 +572,91 @@ footer p {
 
 /* Small devices (tablets, 768px and up) */
 
-@media (max-width: 1200px) {
-    .adptmap {
+@media (max-width: 1050px) {
+    [class*="col-"] {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    .separator-present {
+        display: none;
+    }
+    
+    .section-present {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .block h2 {
+        margin-top: 0px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section-present p {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 0px;
+    }
+    
+    .section-present h3 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .block {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+    }
+    
+    .participant {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .participant p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .fourth-div {
+        width: 100%;
+    }
+    
+    .six-wrap {
+        width: 100%;
+    }
+    
+    .eight-div {
+        width: 100%;
+    }
+    
+     .adptmap {
         display: block;
         margin: 0 auto;
         width: 85%;
         margin-top: 30px;
+         height: 300px;
+         padding-bottom: 50px;
+    }
+    
+    iframe {
+        border: 0px !important;
+    }
+    
+    footer {
+        margin-top: 0px;
+    }
+    
+    footer p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
     }
 }
