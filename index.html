@@ -12,8 +12,8 @@
     <!-- Place favicon.ico in the root directory -->
     <link rel="icon" href="favicon.ico">
 
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,900' rel='stylesheet' type='text/css'>
@@ -28,25 +28,12 @@
     <!-- Add your site or application content here -->
     <div class="first-wrap">
         <div class="first-div">
-
             <div class="first-inner-div">
-
-
-                <a href="#anchor">
+                <a href="#anchor" class="js-scrollTo">
                     <p class="info">HACKATON CODE ACADEMIE</p>
                     <p class="info">Les 26 et 27 novembre</p>
                     <p class="info">Au 23 rue de l'Aiguillon</p>
-                    
-                    <p class="partenaires"><img src="img/logoPartenaire/bg2.jpg" class="partenaire" /> 
-                    <img src="img/logoPartenaire/codeAcademie.png"class="partenaire"/>
-                    <img src="img/logoPartenaire/happyTo.png"class="partenaire"/></p> 
-                    
-
-
-
                 </a>
-
-
             </div>
         </div>
     </div>
@@ -95,7 +82,7 @@
             </p>
         </div>
         <div class="fifth-div">
-            
+
             <div id="container">
                 <div id="contact-wrap">
                     <div id="contact-area">
@@ -110,10 +97,10 @@
 
                             <select id="metier">
                                 <option>je suis?</option>
-                                    <option>Developpeur web</option>
-                                        <option>Réferenciel métier </option>
-                                            <option>Designer</option>
-                                                <option>Big Data</option>
+                                <option>Developpeur web</option>
+                                <option>Réferenciel métier </option>
+                                <option>Designer</option>
+                                <option>Big Data</option>
                             </select>
                             </input>
 
@@ -127,51 +114,50 @@
 
             </div>
         </div>
-        </div>
+    </div>
     </div>
 
-<!--========= 4EME PAGE =======-->
+    <!--========= 4EME PAGE =======-->
 
-   <div class="six-wrap">
-    <div class="eight-div">
-       <div class="seven-div">
-           <p class="body-text titre">
-               <span class="line-separator "></span> Trouvez-nous !
-               <span class="line-separator"></span>
-           </p>
-       </div>
-
-       
-         <div class="container">
-           <div class="row">
-
-             <section>
-
-                   <div class="container">
-                       <div class="row">
-                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" >
-                               <iframe class="adptmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.907968679869!2d-1.685950984352548!3d48.09271807921983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edfc3577854ef%3A0x8bb7f86bfc5c66c7!2s23+Rue+d&#39;Aiguillon%2C+35200+Rennes!5e0!3m2!1sfr!2sfr!4v1475576043645"
-                                   width="300" height="550" frameborder="0" style="border: 1px solid black" allowfullscreen></iframe>
-
-                           </div>
-                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mod">
-                               <br>
+    <div class="six-wrap">
+        <div class="eight-div">
+            <div class="seven-div">
+                <p class="body-text titre">
+                    <span class="line-separator "></span> Trouvez-nous !
+                    <span class="line-separator"></span>
+                </p>
+            </div>
 
 
-                               <h4>HACKATHON</h4>
-                               <h4>23 rue d'Aiguillon</h4>
-                               <h4>35200, Rennes</h4>
-                               <br>
-                           </div>
-                       </div>
-                   </div>
-               </section>
+            <div class="container">
+                <div class="row">
 
-</div>
-</div>
+                    <section>
 
-       </div>
-   </div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <iframe class="adptmap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2664.907968679869!2d-1.685950984352548!3d48.09271807921983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480edfc3577854ef%3A0x8bb7f86bfc5c66c7!2s23+Rue+d&#39;Aiguillon%2C+35200+Rennes!5e0!3m2!1sfr!2sfr!4v1475576043645" width="300" height="550" frameborder="0" style="border: 1px solid black" allowfullscreen></iframe>
+
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 mod">
+                                    <br>
+
+
+                                    <h4>HACKATHON</h4>
+                                    <h4>23 rue d'Aiguillon</h4>
+                                    <h4>35200, Rennes</h4>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
 
 
 
@@ -207,5 +193,17 @@
         ga('send', 'pageview');
     </script>
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.js-scrollTo').on('click', function () { // Au clic sur un élément
+            var page = $(this).attr('href'); // Page cible
+            var speed = 750; // Durée de l'animation (en ms)
+            $('html, body').animate({
+                scrollTop: $(page).offset().top
+            }, speed); // Go
+            return false;
+        });
+    });
+</script>
 </html>
