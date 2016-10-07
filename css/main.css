@@ -206,9 +206,9 @@ body {
 .first-wrap {
     height: 100%;
     width: 100%;
-    background: url("../img/MG_2088.jpg");
+    background: url("../img/MG_2088.png");
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 }
 
 
@@ -220,16 +220,91 @@ body {
     background: #ffffff url("../img/test-chat.jpg") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
+    background-attachment: fixed;
 }
+
+.section-present {
+    margin-top: 100px;
+}
+
+.block2 {
+    background-color: white;
+    height: 600px;
+}
+
+.block {
+    background-color: whitesmoke;
+    color: #222;
+}
+
+.block:hover {
+    background-color: #222;
+    color: white;
+}
+
+.block h2 {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 1.2em;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.block h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+
+.separator-present {
+    height: 1px;
+    background-color: #333;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
+
+.block p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.participant {
+    margin-bottom: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}
+
+.participant p {
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+}
+
+.second-div {
+    display: table;
+    height: 30vh;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
 
 /* Third Wrap Background */
 
 .third-wrap {
     height: 100%;
     width: 100vw;
-    background: #ffffff url("../img/Est-ce-la-fin-du-clavier-Azerty-en-France.jpg") no-repeat fixed;
+    background: #ffffff url("../img/header.png") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
+    background-color: #222;
 }
 
 .first-div {
@@ -255,7 +330,7 @@ body {
     padding-right: 40px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     font-family: 'Audiowide', cursive;
 }
 
@@ -277,13 +352,6 @@ body {
     transition: 0.5s;
 }
 
-.second-div {
-    display: table;
-    height: 30vh;
-    width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
 .third-div {
     display: table;
     height: 70vh;
@@ -298,8 +366,6 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-
-
 .fifth-div {
     display: table;
     height: 70vh;
@@ -307,44 +373,45 @@ body {
     background-color: transparent;
 }
 
-
 .six-wrap {
     display: table;
     height: 70vh;
     width: 100vw;
     background-color: transparent;
 }
+
 .seven-div {
     display: table;
     width: 100vw;
     /*background-color: rgba(0, 0, 0, 0.3)!important;*/
 }
+
 .eight-div {
     display: table;
     height: 70vh;
-    background: #ffffff
-url("../img/sunset-over-district.jpg") no-repeat fixed;
+    background: #ffffff url("../img/sunset-over-district.jpg") no-repeat fixed;
     width: 100vw;
     background-color: transparent!;
     background-size: cover;
     background-position: 50% 50%;
     "background-color: rgba(255, 255, 255, 0.3);
+
 }
 
 .mod {
-background-color: rgba(0, 0, 0, 0.7)!important;
-margin-top: 5%;
-text-align: center;
-color: #A27232 ;
-font-size: 1em;
-font-family: 'Audiowide', cursive!important;
+    background-color: rgba(0, 0, 0, 0.7)!important;
+    margin-top: 5%;
+    text-align: center;
+    color: #A27232;
+    font-size: 1em;
+    font-family: 'Audiowide', cursive!important;
 }
 
 .adptmap {
- display: block;
- margin: 0 auto;
-  margin-top: 50px;
-  width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 75%;
 }
 
 #back-to-top {
@@ -430,6 +497,275 @@ font-family: 'Audiowide', cursive!important;
     position: static;
     width: auto;
 }
+
+
+/*formulaire de contact*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+*:focus {
+    outline: 0;
+}
+
+
+/*html {
+    height: 100%;
+}*/
+
+
+/*body {
+    background: #858d98;
+    /* Old browsers */
+
+
+/*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#858d98', endColorstr='#4a525d', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+
+
+/*background: -moz-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
+    /* FF3.6+ */
+
+
+/*background: -webkit-gradient(radial, top top, 0px, top top, 100%, color-stop(1%, #858d98), color-stop(99%, #4a525d));
+    /* Chrome,Safari4+ */
+
+
+/*background: -webkit-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
+    /* Chrome10+,Safari5.1+ */
+
+
+/*background: -o-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
+    /* Opera 12+ */
+
+
+/*background: -ms-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
+    /* IE10+ */
+
+
+/*background: radial-gradient(ellipse at top, #858d98 1%, #4a525d 99%);
+    /* W3C */
+
+
+/*.dim:hover {
+    margin-top: 5px;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+    /* For IE8 and earlier */
+
+#container {
+    margin: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: auto;
+}
+
+#demo {
+    width: 300px;
+    font-family: 'Lato', calibri, arial;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+    text-align: left;
+    background: none;
+    overflow: auto;
+    float: left;
+    margin-left: 40px;
+    color: #fff;
+}
+
+#demo p {
+    font-family: 'Lato', calibri, arial;
+    font-size: 16px;
+    font-weight: 300;
+    text-align: left;
+    color: #fff;
+}
+
+#demo h1 {
+    font-family: 'Lato', calibri, arial;
+    font-size: 20px;
+    font-weight: 100;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#demo img {
+    display: block;
+    float: left;
+    margin-right: 10px;
+    border: 0px solid #888;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+
+/* Below is the design for the contact form */
+
+#contact-wrap {
+    font-family: 'Lato', calibri, arial;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+    float: left;
+    margin: 0 auto;
+}
+
+#contact-area {
+    margin-left: 3px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#contact-area input,
+#contact-area textarea {
+    padding: 5px;
+    width: 100%;
+    font-family: 'Lato', calibri, arial;
+    font-size: 17px;
+    font-weight: 300;
+    color: #fff;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+#contact-area textarea {
+    height: 150px;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+#contact-area textarea:focus,
+#contact-area input:focus {
+    background-color: #333;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+#contact-area input.submit-button {
+    font-family: 'Lato', calibri, arial;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 100px;
+    float: left;
+    background-color: transparent;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    float: right;
+    font-weight: bold;
+}
+
+#contact-area input.submit-button:hover {
+    color: #fff;
+    background-color: #333;
+}
+
+label {
+    float: left;
+    text-align: left;
+    margin-right: 16px;
+    width: 100px;
+    padding-top: 5px;
+    font-family: 'Lato', calibri, arial;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+::-moz-placeholder {
+    /* Firefox 18- */
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+::placeholder {
+    /* Firefox 19+ */
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+:-ms-input-placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+select {
+    padding: 5px;
+    width: 100%;
+    font-family: 'Lato', calibri, arial;
+    font-size: 17px;
+    font-weight: 300;
+    color: white;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+option {
+    background-color: #333;
+}
+
+
+/* pour enlever le trait sous te texte en hover*/
+
+a:hover {
+    text-decoration: none;
+}
+
+
+/* gestion des logos partenaires*/
+
+.info {
+    color: white !important;
+    font-size: 15px;
+}
+
+
+/* gestion des logos partenaires*/
+
+.partenaire {
+    height: 50px;
+    background-color: white !important;
+}
+
+.partenaires {
+    background-color: white !important;
+}
+
+-
+/* CSS DE LA 4EME PAGE*/
 
 
 /*
@@ -551,284 +887,6 @@ font-family: 'Audiowide', cursive!important;
 }
 
 
-/*formulaire de contact*/
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
-*:focus {
-    outline: 0;
-}
-
-
-/*html {
-    height: 100%;
-}*/
-
-
-/*body {
-    background: #858d98;
-    /* Old browsers */
-
-
-/*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#858d98', endColorstr='#4a525d', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-
-/*background: -moz-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* FF3.6+ */
-
-
-/*background: -webkit-gradient(radial, top top, 0px, top top, 100%, color-stop(1%, #858d98), color-stop(99%, #4a525d));
-    /* Chrome,Safari4+ */
-
-
-/*background: -webkit-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Chrome10+,Safari5.1+ */
-
-
-/*background: -o-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Opera 12+ */
-
-
-/*background: -ms-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* IE10+ */
-
-
-/*background: radial-gradient(ellipse at top, #858d98 1%, #4a525d 99%);
-    /* W3C */
-
-
-/*.dim:hover {
-    margin-top: 5px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    /* For IE8 and earlier */
-
-#container {
-    margin: auto;
-    width: 100%;
-    margin-bottom: 50px;
-    overflow: auto;
-}
-
-#demo {
-    width: 300px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px;
-    text-align: left;
-    background: none;
-    overflow: auto;
-    float: left;
-    margin-left: 40px;
-    color: #fff;
-}
-
-#demo p {
-    font-family: 'Lato', calibri, arial;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    color: #fff;
-}
-
-#demo h1 {
-    font-family: 'Lato', calibri, arial;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#demo img {
-    display: block;
-    float: left;
-    margin-right: 10px;
-    border: 0px solid #888;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-
-
-/* Below is the design for the contact form */
-
-#contact-wrap {
-    font-family: 'Lato', calibri, arial;
-    font-size: 16px;
-    font-weight: 300;
-    width: 100%;
-    color: #fff;
-    overflow: auto;
-    float: left;
-    margin:0 auto;
-}
-
-#contact-area {
-    margin-left: 3px;
-    width: 100%;
-    padding: 20px;
-    margin:0 auto;
-}
-
-#contact-area input,
-#contact-area textarea {
-    padding: 5px;
-    width: 100%;
-    font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: #fff;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-    margin-bottom: 15px;
-}
-
-#contact-area textarea {
-    height: 150px;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-}
-
-#contact-area textarea:focus,
-#contact-area input:focus {
-    background-color: #333;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-}
-
-#contact-area input.submit-button {
-    font-family: 'Lato', calibri, arial;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    width: 100px;
-    float: left;
-    background-color: transparent;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-    float: right;
-    font-weight: bold;
-}
-
-#contact-area input.submit-button:hover {
-    color: #fff;
-    background-color: #333;
-}
-
-label {
-    float: left;
-    text-align: left;
-    margin-right: 16px;
-    width: 100px;
-    padding-top: 5px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-::-webkit-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-::-moz-placeholder {
-    /* Firefox 18- */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-::placeholder {
-    /* Firefox 19+ */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-:-ms-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-select {
-    padding: 5px;
-    width: 100%;
-    font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: white;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-    margin-bottom: 15px;
-}
-
-option {
-    background-color: #333;
-}
-
-
-/* pour enlever le trait sous te texte en hover*/
-a:hover {
-    text-decoration: none;
-}
-
-/* gestion des logos partenaires*/
-
-.info {
-    color: white !important;
-    font-size: 15px;
-}
-
-
-
-/* gestion des logos partenaires*/
-.partenaire {
-    height: 50px;
-    background-color: white !important;
-}
-
-.partenaires {
-    background-color: white !important;
-}
-
-.titre {
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-}
-
-
--/* CSS DE LA 4EME PAGE*/
-
-
-
-
 /* ##################################################################### */
 
 
@@ -841,10 +899,10 @@ a:hover {
 /* Small devices (tablets, 768px and up) */
 
 @media (max-width: 1200px) {
- .adptmap{
-    display: block;
-    margin: 0 auto;
-    width: 85%;
-    margin-top: 30px;
- }
+    .adptmap {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 30px;
+    }
 }
