@@ -1,13 +1,3 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -28,12 +18,10 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
@@ -101,105 +89,42 @@ textarea {
 
 
 /* ==========================================================================
-   Author's custom styles
+   LISE POIRIER - REBECCA MACCIO - RONALD MARCEL - LATIFA BOUMIZY
    ========================================================================== */
 
 
-/* ##################################################################### */
 
-
-/* ##########################   SMARTPHONE   ########################### */
-
-
-/* ##################################################################### */
-
-
-/* Extra small devices (phones, less than 768px) */
-
-
-/* ##################################################################### */
-
-
-/* ############################   TABLETS   ############################ */
-
-
-/* ##################################################################### */
-
-
-/* Small devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {}
-
-
-/* ##################################################################### */
-
-
-/* ############################   DESKTOPS   ########################### */
-
-
-/* ##################################################################### */
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {}
-
-
-/* ##################################################################### */
-
-
-/* ########################   LARGE DESKTOPS   ######################### */
-
-
-/* ##################################################################### */
-
-
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-body {
-    overflow-x: hidden;
-}
-
-
-/* Resize in Mobile View */
-
-@media (min-width: 0) and (max-width: 767px) {
-    p,
-    .body-text {
-        font-size: 10px !important;
-    }
-    .down-arrow {
-        font-size: 20px !important;
-    }
-}
-
-
-/* Resize in Tablet View */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    p,
-    .body-text {
-        font-size: 15px !important;
-    }
-    .down-arrow {
-        font-size: 30px !important;
-    }
-}
-
-
-/* Line Separators CSS */
+/* SEPARATOR DIV */
 
 .line-separator {
     display: block;
     width: 50%;
     height: 1px;
     text-align: center;
-    margin: 20px auto;
     border-bottom: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
+.line-separator2 {
+    display: block;
+    width: 50%;
+    height: 1px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separator-present {
+    height: 1px;
+    background-color: #333;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 18px;
+}
 
 /* First Wrap Background */
 
@@ -211,6 +136,37 @@ body {
     background-position: bottom;
 }
 
+.first-div {
+    position: relative;
+    height: 100vh;
+    background-color: transparent;
+}
+
+.first-inner-div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.first-inner-div h1 {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Audiowide', cursive;
+}
+
+.first-inner-div p:hover {
+    background-color: white;
+    color: #222 !important;
+    font-family: 'Audiowide', cursive;
+}
 
 /* Second Wrap Background */
 
@@ -226,11 +182,6 @@ body {
 .section-present {
     margin-top: 100px;
     margin-bottom: 100px;
-}
-
-.block2 {
-    background-color: white;
-    height: 600px;
 }
 
 .block {
@@ -257,15 +208,6 @@ body {
     margin-top: 0px;
 }
 
-
-.separator-present {
-    height: 1px;
-    background-color: #333;
-    width: 300px;
-    margin-bottom: 20px;
-    margin-left: 18px;
-}
-
 .block p {
     text-align: justify;
     margin-bottom: 30px;
@@ -288,70 +230,26 @@ body {
     font-size: 1.2em;
 }
 
-.second-div {
-    display: table;
-    height: 30vh;
-    margin-top: 100px;
-    margin-bottom: 10px;
-    background-color: rgba(255, 255, 255, 0.9);
-}
-
-
 /* Third Wrap Background */
 
 .third-wrap {
-    height: 100%;
-    width: 100vw;
     background: #ffffff url("../img/header.png") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
     background-color: #222;
+    width: 100%;
 }
 
-.first-div {
-    position: relative;
-    height: 100vh;
-    width: 100vw;
-    background-color: transparent;
-}
-
-.first-inner-div {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-}
-
-.first-inner-div p {
-    padding: 20px;
+.third-wrap h2 {
     padding-left: 40px;
     padding-right: 40px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    background-color: rgba(0, 0, 0, 0.9);
+    color: whitesmoke;
+    font-size: 15px;
     font-family: 'Audiowide', cursive;
 }
 
-.first-inner-div p:hover {
-    background-color: white;
-    color: #222 !important;
-    font-family: 'Audiowide', cursive;
-}
-
-.down-arrow {
-    font-size: 70px;
-    color: #A27232;
-    margin-top: 5%;
-    opacity: 0.9;
-}
-
-.down-arrow:hover {
-    opacity: 1;
-    transition: 0.5s;
-}
 
 .third-div {
     display: table;
@@ -362,23 +260,32 @@ body {
 
 .fourth-div {
     display: table;
-    height: 30vh;
-    width: 100vw;
     background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 30px;
 }
 
 .fifth-div {
     display: table;
     height: 70vh;
-    width: 100vw;
     background-color: transparent;
 }
 
 .six-wrap {
     display: table;
     height: 70vh;
-    width: 100vw;
     background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.six-wrap h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Audiowide', cursive;
 }
 
 .seven-div {
@@ -390,8 +297,7 @@ body {
 .eight-div {
     display: table;
     height: 70vh;
-    background: #ffffff url("../img/sunset-over-district.jpg") no-repeat fixed;
-    width: 100vw;
+    background: #ffffff url("../img/clavier.jpg") no-repeat fixed;
     background-color: transparent!;
     background-size: cover;
     background-position: 50% 50%;
@@ -413,6 +319,8 @@ body {
     margin: 0 auto;
     margin-top: 50px;
     width: 75%;
+    filter: saturate(0);
+    opacity: 0.9;
 }
 
 #back-to-top {
@@ -627,9 +535,7 @@ body {
     padding: 5px;
     width: 100%;
     font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: #fff;
+    color: whitesmoke;
     background-color: transparent;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
@@ -649,7 +555,8 @@ body {
 
 #contact-area textarea:focus,
 #contact-area input:focus {
-    background-color: #333;
+    background-color: whitesmoke;
+    color: #222;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-bottom: 1px solid #fff;
@@ -658,7 +565,7 @@ body {
 
 #contact-area input.submit-button {
     font-family: 'Lato', calibri, arial;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     text-transform: uppercase;
     width: 100px;
@@ -678,54 +585,40 @@ body {
 }
 
 #contact-area input.submit-button:hover {
-    color: #fff;
-    background-color: #333;
-}
-
-label {
-    float: left;
-    text-align: left;
-    margin-right: 16px;
-    width: 100px;
-    padding-top: 5px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 18px;
-    font-weight: 300;
+    color: #222;
+    background-color: whitesmoke;
 }
 
 ::-webkit-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 ::-moz-placeholder {
     /* Firefox 18- */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 ::placeholder {
     /* Firefox 19+ */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 :-ms-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 select {
-    padding: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     width: 100%;
-    font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8E8E8F;
+    ;
     background-color: transparent;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
@@ -736,6 +629,9 @@ select {
 
 option {
     background-color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
 }
 
 
@@ -800,6 +696,21 @@ a:hover {
 
 .clearfix:after {
     clear: both;
+}
+
+footer {
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-transform: uppercase;
+}
+
+footer p {
+    margin-bottom: 0px;
 }
 
 

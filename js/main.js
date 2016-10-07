@@ -21,8 +21,10 @@ $(function () {
   Back to top scroll button. The following code is from
   http://jsfiddle.net/gilbitron/Lt2wH/
 */
+
+//Scroll fluid pour l'ancre
 if ($('#back-to-top').length) {
-	var scrollTrigger = 100, // px
+	var scrollTrigger = 100,
 		backToTop = function () {
 			var scrollTop = $(window).scrollTop();
 			if (scrollTop > scrollTrigger) {
@@ -31,5 +33,3 @@ if ($('#back-to-top').length) {
 				$('#back-to-top').removeClass('show');
 			}
 		};
-
-	/*formulaire de contact*/   
