@@ -225,6 +225,7 @@ body {
 
 .section-present {
     margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .block2 {
@@ -245,7 +246,7 @@ body {
 .block h2 {
     font-family: 'Audiowide', cursive;
     font-weight: 400;
-    font-size: 1.2em;
+    font-size: 1.1em;
     margin-top: 30px;
     text-transform: uppercase;
 }
