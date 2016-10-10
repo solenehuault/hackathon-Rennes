@@ -239,11 +239,9 @@ textarea {
     cursor: pointer;
 }
 
-.img-top {
-    padding-top: 10px;
-}
-.img-bottom {
-    padding-bottom: 30px;
+.block img {
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .partenaire:hover {
