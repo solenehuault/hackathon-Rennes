@@ -3,7 +3,7 @@
    ========================================================================== */
 
 html {
-    color: #000;
+    color: #222;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -83,7 +83,7 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #222;
     padding: 0.2em 0;
 }
 
@@ -171,7 +171,7 @@ textarea {
 
 .first-inner-div h1:hover {
     background-color: white;
-    color: #000 !important;
+    color: #222 !important;
     font-family: 'Audiowide', cursive;
 }
 
@@ -194,11 +194,11 @@ textarea {
 
 .block {
     background-color: whitesmoke;
-    color: #000;
+    color: #222;
 }
 
 .block:hover {
-    background-color: #000;
+    background-color: #222;
     color: white;
 }
 
@@ -223,7 +223,7 @@ textarea {
 
 .participant {
     margin-bottom: 20px;
-    background-color: #000;
+    background-color: #222;
     color: white;
     text-align: center;
     border: 1px solid whitesmoke;
@@ -239,6 +239,18 @@ textarea {
     cursor: pointer;
 }
 
+.img-top {
+    padding-top: 10px;
+}
+.img-bottom {
+    padding-bottom: 30px;
+}
+
+.partenaire:hover {
+    background-color: whitesmoke;
+    color: #222;
+}
+
 
 /* Third Wrap Background */
 
@@ -246,7 +258,7 @@ textarea {
     background: #ffffff url("../img/header.png") no-repeat fixed;
     background-size: cover;
     background-position: 50% 50%;
-    background-color: #000;
+    background-color: #222;
     width: 100%;
 }
 
@@ -358,7 +370,7 @@ textarea {
 #contact-area textarea:focus,
 #contact-area input:focus {
     background-color: whitesmoke;
-    color: #000;
+    color: #222;
     border-top: 1px solid transparent;
     border-left: 1px solid transparent;
     border-bottom: 1px solid #fff;
@@ -387,7 +399,7 @@ textarea {
 }
 
 #contact-area input.submit-button:hover {
-    color: #000;
+    color: #222;
     background-color: whitesmoke;
 }
 
@@ -462,7 +474,7 @@ a:hover {
 footer {
     height: 75px;
     width: 100%;
-    background-color: #000;
+    background-color: #222;
     margin-top: 100px;
     display: flex;
     justify-content: center;
@@ -505,7 +517,7 @@ footer p {
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
+        color: #222 !important;
         /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
