@@ -244,7 +244,7 @@ textarea {
     margin-bottom: 30px;
 }
 
-.partenaire:hover {
+.partenaire1:hover {
     background-color: whitesmoke;
     color: #222;
 }
@@ -634,6 +634,11 @@ footer p {
         padding-top: 10px;
         padding-bottom: 10px;
     }
+    
+    .partenaire {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
     
     .fourth-div {
         width: 100%;
