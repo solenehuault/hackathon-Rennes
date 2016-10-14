@@ -308,6 +308,46 @@ p {
     background-color: transparent;
 }
 
+
+.six-wrap {
+    display: table;
+    height: 70vh;
+    width: 100vw;
+    background-color: transparent;
+}
+.seven-div {
+    display: table;
+    width: 100vw;
+    /*background-color: rgba(0, 0, 0, 0.3)!important;*/
+}
+.eight-div {
+    display: table;
+    height: 70vh;
+    background: #ffffff
+url("../img/sunset-over-district.jpg") no-repeat fixed;
+    width: 100vw;
+    background-color: transparent!;
+    background-size: cover;
+    background-position: 50% 50%;
+    "background-color: rgba(255, 255, 255, 0.3);
+}
+
+.mod {
+background-color: rgba(0, 0, 0, 0.7)!important;
+margin-top: 5%;
+text-align: center;
+color: #A27232 ;
+font-size: 1em;
+font-family: 'Audiowide', cursive!important;
+}
+
+.adptmap {
+ display: block;
+ margin: 0 auto;
+  margin-top: 50px;
+  width: 75%;
+}
+
 #back-to-top {
     position: fixed;
     bottom: 40px;
@@ -514,222 +554,6 @@ p {
 
 /*formulaire de contact*/
 
-@import url(http://fonts.googleapis.com/css?family=Exo);
-$white: #fff;
-$black: #000;
-$main-black: #333;
-$green: #3ac28c;
-$lucifer: #666;
-html,
-body {
-    font-family: 'Exo', sans-serif;
-    background-color: $main-black;
-    height: 100%;
-    width: 100%;
-    position: relative;
-}
-
-a.button {
-    text-decoration: none;
-    padding: 20px;
-    display: inline-block;
-    border: 1px solid $white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: $white;
-    transform: translate(-50%, -50%);
-    transition: all .4s;
-    &:hover {
-        border-color: $green;
-        color: $green;
-    }
-}
-
-.modal-overlay {
-    background: $main-black;
-    bottom: 0;
-    left: 0;
-    position: fixed;
-    right: 0;
-    text-align: center;
-    text-shadow: none;
-    top: 0;
-    opacity: 0;
-    transform: scale(.5);
-    transition: all .75s cubic-bezier(.68, -.55, .265, 1.55);
-    z-index: -100;
-}
-
-.modal-wrapper {
-    padding: 1em 0;
-    position: relative;
-    margin: 0 auto;
-    max-width: 500px;
-    width: 90%;
-    .close {
-        padding: 14px;
-        position: absolute;
-        right: .5em;
-        top: 2.5em;
-        width: 1.5em;
-        cursor: pointer;
-        &:before,
-        &:after {
-            content: '';
-            position: absolute;
-            display: block;
-            width: 2px;
-            height: 36px;
-            background-color: $green;
-            top: -5px;
-        }
-        &:before {
-            transform: rotate(45deg);
-        }
-        &:after {
-            transform: rotate(-45deg);
-        }
-    }
-    h2 {
-        color: $white;
-        margin-bottom: 1em;
-        text-transform: uppercase;
-    }
-}
-
-@media (min-width: 50em) {
-    .modal-wrapper {
-        padding: 1.75em;
-    }
-}
-
-@media (min-height: 37.5em) {
-    .modal-wrapper {
-        left: 50%;
-        position: absolute;
-        top: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.active + .modal-overlay {
-    opacity: 1;
-    transform: scale(1);
-    z-index: 800;
-}
-
-.message-form {
-    clear: both;
-    height: 350px;
-    .input-button {
-        text-align: center;
-        padding: 20px;
-        .button {
-            border: 1px solid $white;
-            background-color: transparent;
-            padding: 10px 20px;
-            transition: all .4s;
-            color: $white;
-            font-family: 'Exo', sans-serif;
-            cursor: pointer;
-            &:hover {
-                color: $green;
-                border-color: $green;
-            }
-        }
-    }
-    .input-box {
-        font-size: 16px;
-        line-height: 24px;
-        width: 100%;
-        height: 72px;
-        display: block;
-        position: relative;
-        &.focus {
-            .input-label {
-                color: $green;
-                transform: perspective(1px) scale(.75) translate3d(0, -18px, 0);
-            }
-            .underline-focus {
-                transform: scaleX(1);
-            }
-            &.textarea {
-                overflow-y: hidden;
-                height: 200px;
-                /* approximate max height */
-                padding: 0 0 60px;
-                .input-text {
-                    max-height: 200px;
-                    margin-top: 45px;
-                    padding-top: 0;
-                }
-            }
-        }
-        &.textarea {
-            transition-property: all;
-            transition-duration: .5s;
-            transition-timing-function: cubic-bezier(0, 1, .5, 1);
-            .input-text {
-                resize: none;
-                overflow: hidden;
-            }
-        }
-        .input-label {
-            position: absolute;
-            line-height: 48px;
-            opacity: 1;
-            color: $lucifer;
-            transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
-            top: 24px;
-            transform: scale(1) translate3d(0, 0, 0);
-            transform-origin: left top 0;
-        }
-        .input-text {
-            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-            position: relative;
-            width: 100%;
-            height: 100%;
-            border: 0;
-            outline: none;
-            background-color: transparent;
-            color: $white;
-            box-sizing: border-box;
-            padding-top: 36px;
-            box-shadow: none;
-            padding-left: 0;
-            font-size: 18px;
-        }
-        .underline {
-            border: 0;
-            border-bottom: solid 1px #e0e0e0;
-            position: absolute;
-            width: 100%;
-            bottom: 8px;
-            margin: 0;
-            // false: content-box;
-            box-sizing: content-box;
-            height: 0;
-        }
-        .underline-focus {
-            border-style: none none solid;
-            border-bottom-width: 2px;
-            position: absolute;
-            width: 100%;
-            bottom: 8px;
-            margin: 0;
-            box-sizing: content-box;
-            height: 0;
-            border-color: $green;
-            transform: scaleX(0);
-            transition: all 450ms cubic-bezier(.23, 1, .32, 1) 0ms;
-        }
-    }
-}
-
-
-/*formulaire de contact*/
-
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
 *:focus {
     outline: 0;
@@ -782,7 +606,7 @@ a.button {
 
 #container {
     margin: auto;
-    width: 800px;
+    width: 100%;
     margin-bottom: 50px;
     overflow: auto;
 }
@@ -836,22 +660,24 @@ a.button {
     font-family: 'Lato', calibri, arial;
     font-size: 16px;
     font-weight: 300;
-    width: 402px;
+    width: 100%;
     color: #fff;
     overflow: auto;
     float: left;
+    margin:0 auto;
 }
 
 #contact-area {
     margin-left: 3px;
-    width: 342px;
+    width: 100%;
     padding: 20px;
+    margin:0 auto;
 }
 
 #contact-area input,
 #contact-area textarea {
     padding: 5px;
-    width: 342px;
+    width: 100%;
     font-family: 'Lato', calibri, arial;
     font-size: 17px;
     font-weight: 300;
@@ -884,7 +710,7 @@ a.button {
 
 #contact-area input.submit-button {
     font-family: 'Lato', calibri, arial;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 300;
     text-transform: uppercase;
     width: 100px;
@@ -899,6 +725,8 @@ a.button {
     -o-transition: all 0.1s ease-in-out;
     -ms-transition: all 0.1s ease-in-out;
     transition: all 0.1s ease-in-out;
+    float: right;
+    font-weight: bold;
 }
 
 #contact-area input.submit-button:hover {
@@ -917,31 +745,35 @@ label {
     font-weight: 300;
 }
 
-input::-webkit-input-placeholder {
-    color: #fff;
-    font-size: 14px;
+::-webkit-input-placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-input:-moz-placeholder {
+::-moz-placeholder {
     /* Firefox 18- */
-    color: #fff;
-    font-size: 14px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-input::placeholder {
+::placeholder {
     /* Firefox 19+ */
-    color: #fff;
-    font-size: 14px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
 
-input:-ms-input-placeholder {
-    color: #fff;
-    font-size: 14px;
+:-ms-input-placeholder {
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 select {
     padding: 5px;
-    width: 342px;
+    width: 100%;
     font-family: 'Lato', calibri, arial;
     font-size: 17px;
     font-weight: 300;
@@ -954,9 +786,10 @@ select {
     margin-bottom: 15px;
 }
 
-.contact-area placeholder] {
-    color: white;
+option {
+    background-color: #333;
 }
+
 
 /* pour enlever le trait sous te texte en hover*/
 a:hover {
@@ -989,4 +822,30 @@ a:hover {
     font-size: 20px;
     letter-spacing: 0.45em;
     text-transform: uppercase;
+}
+
+
+-/* CSS DE LA 4EME PAGE*/
+
+
+
+
+/* ##################################################################### */
+
+
+/* ############################   TABLETS   ############################ */
+
+
+/* ##################################################################### */
+
+
+/* Small devices (tablets, 768px and up) */
+
+@media (max-width: 1200px) {
+ .adptmap{
+    display: block;
+    margin: 0 auto;
+    width: 85%;
+    margin-top: 30px;
+ }
 }
