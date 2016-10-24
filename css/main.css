@@ -1,13 +1,3 @@
-/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
-
-
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -28,12 +18,10 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
     text-shadow: none;
 }
 
@@ -95,109 +83,51 @@ textarea {
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #222;
     padding: 0.2em 0;
 }
 
 
 /* ==========================================================================
-   Author's custom styles
+   LISE POIRIER - REBECCA MACCIO - RONALD MARCEL - LATIFA BOUMIZY
    ========================================================================== */
 
 
-/* ##################################################################### */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
 
 
-/* ##########################   SMARTPHONE   ########################### */
-
-
-/* ##################################################################### */
-
-
-/* Extra small devices (phones, less than 768px) */
-
-
-/* ##################################################################### */
-
-
-/* ############################   TABLETS   ############################ */
-
-
-/* ##################################################################### */
-
-
-/* Small devices (tablets, 768px and up) */
-
-@media (min-width: 768px) {}
-
-
-/* ##################################################################### */
-
-
-/* ############################   DESKTOPS   ########################### */
-
-
-/* ##################################################################### */
-
-
-/* Medium devices (desktops, 992px and up) */
-
-@media (min-width: 992px) {}
-
-
-/* ##################################################################### */
-
-
-/* ########################   LARGE DESKTOPS   ######################### */
-
-
-/* ##################################################################### */
-
-
-/* Large devices (large desktops, 1200px and up) */
-
-@media (min-width: 1200px) {}
-
-body {
-    overflow-x: hidden;
-}
-
-
-/* Resize in Mobile View */
-
-@media (min-width: 0) and (max-width: 767px) {
-    p,
-    .body-text {
-        font-size: 10px !important;
-    }
-    .down-arrow {
-        font-size: 20px !important;
-    }
-}
-
-
-/* Resize in Tablet View */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    p,
-    .body-text {
-        font-size: 15px !important;
-    }
-    .down-arrow {
-        font-size: 30px !important;
-    }
-}
-
-
-/* Line Separators CSS */
+/* SEPARATOR DIV */
 
 .line-separator {
     display: block;
     width: 50%;
     height: 1px;
     text-align: center;
-    margin: 20px auto;
     border-bottom: 1px solid grey;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.line-separator2 {
+    display: block;
+    width: 50%;
+    height: 1px;
+    text-align: center;
+    border-bottom: 1px solid whitesmoke;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.separator-present {
+    height: 1px;
+    background-color: #333;
+    width: 300px;
+    margin-bottom: 20px;
+    margin-left: 18px;
 }
 
 
@@ -205,38 +135,15 @@ body {
 
 .first-wrap {
     height: 100%;
-    width: 100vw;
-    background: #ffffff url("../img/MG_2088.jpg");
+    width: 100%;
+    background: url("../img/MG_2088.png");
     background-size: cover;
-    background-position: 50% 50%;
-}
-
-
-/* Second Wrap Background */
-
-.second-wrap {
-    height: 100%;
-    width: 100vw;
-    background: #ffffff url("../img/test-chat.jpg") no-repeat fixed;
-    background-size: cover;
-    background-position: 50% 50%;
-}
-
-
-/* Third Wrap Background */
-
-.third-wrap {
-    height: 100%;
-    width: 100vw;
-    background: #ffffff url("../img/Est-ce-la-fin-du-clavier-Azerty-en-France.jpg") no-repeat fixed;
-    background-size: cover;
-    background-position: 50% 50%;
+    background-position: bottom;
 }
 
 .first-div {
     position: relative;
     height: 100vh;
-    width: 100vw;
     background-color: transparent;
 }
 
@@ -250,220 +157,332 @@ body {
     font-size: 20px;
 }
 
-.down-arrow {
-    font-size: 70px;
-    color: #A27232;
-    margin-top: 5%;
-    opacity: 0.9;
+.first-inner-div h1 {
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-family: 'Audiowide', cursive;
+    color: white;
+    font-size: 15px;
 }
 
-.down-arrow:hover {
-    opacity: 1;
-    transition: 0.5s;
+.first-inner-div h1:hover {
+    background-color: white;
+    color: #222 !important;
+    font-family: 'Audiowide', cursive;
 }
 
-p {
-    padding: 20px !important;
-    letter-spacing: 0.45em!important;
-    text-transform: uppercase!important;
-    background-color: rgba(0, 0, 0, 0.7)!important;
-    font-family: 'Audiowide', cursive!important;
-}
 
-.second-div {
-    display: table;
-    height: 30vh;
+/* Second Wrap Background */
+
+.second-wrap {
+    height: 100%;
     width: 100vw;
-    background-color: rgba(255, 255, 255, 0.3);
+    background: #ffffff url("../img/test-chat.jpg") no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
 }
 
-p {
-    vertical-align: middle;
-    text-align: center;
-    font-size: 20px;
-    letter-spacing: 0.45em;
+.section-present {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.block {
+    background-color: whitesmoke;
+    color: #222;
+}
+
+.block:hover {
+    background-color: #222;
+    color: white;
+}
+
+.block h2 {
+    font-family: 'Audiowide', cursive;
+    font-weight: 400;
+    font-size: 1.1em;
+    margin-top: 30px;
     text-transform: uppercase;
 }
 
-.third-div {
-    display: table;
-    height: 70vh;
-    width: 100vw;
-    background-color: transparent;
+.block h3 {
+    font-size: 1.2em;
+    text-transform: uppercase;
+    margin-top: 0px;
+}
+
+.block p {
+    text-align: justify;
+    margin-bottom: 30px;
+}
+
+.participant {
+    margin-bottom: 20px;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    border: 1px solid whitesmoke;
+}
+
+.participant p {
+    color: white;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.block img {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.partenaire1:hover {
+    background-color: whitesmoke;
+    color: #222;
+}
+
+
+/* Third Wrap Background */
+
+.third-wrap {
+    background: #ffffff url("../img/header.png") no-repeat fixed;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-color: #222;
+    width: 100%;
+}
+
+.third-wrap h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Audiowide', cursive;
 }
 
 .fourth-div {
     display: table;
-    height: 30vh;
-    width: 100vw;
     background-color: rgba(0, 0, 0, 0.3);
+    padding-left: 30px;
 }
-
-
-
-.fifth-div {
-    display: table;
-    height: 70vh;
-    width: 100vw;
-    background-color: transparent;
-}
-
 
 .six-wrap {
     display: table;
     height: 70vh;
-    width: 100vw;
     background-color: transparent;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.seven-div {
-    display: table;
-    width: 100vw;
-    /*background-color: rgba(0, 0, 0, 0.3)!important;*/
+
+.six-wrap h2 {
+    padding-left: 40px;
+    padding-right: 40px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 15px;
+    font-family: 'Audiowide', cursive;
 }
+
 .eight-div {
     display: table;
     height: 70vh;
-    background: #ffffff
-url("../img/sunset-over-district.jpg") no-repeat fixed;
-    width: 100vw;
+    background: #ffffff url("../img/clavier.jpg") no-repeat fixed;
     background-color: transparent!;
     background-size: cover;
     background-position: 50% 50%;
-    "background-color: rgba(255, 255, 255, 0.3);
-}
-
-.mod {
-background-color: rgba(0, 0, 0, 0.7)!important;
-margin-top: 5%;
-text-align: center;
-color: #A27232 ;
-font-size: 1em;
-font-family: 'Audiowide', cursive!important;
 }
 
 .adptmap {
- display: block;
- margin: 0 auto;
-  margin-top: 50px;
-  width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 75%;
+    filter: saturate(0);
+    opacity: 0.9;
+    margin-bottom: 100px;
 }
 
-#back-to-top {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    z-index: 9999;
-    width: 32px;
-    height: 32px;
-    text-align: center;
-    line-height: 30px;
-    background-color: rgb(255, 255, 255);
-    color: #A27232;
-    cursor: pointer;
-    border: 0;
-    border-radius: 2px;
+
+/*formulaire de contact*/
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+*:focus {
+    outline: 0;
+}
+
+
+/* Below is the design for the contact form */
+
+#contact-wrap {
+    font-family: 'Lato', calibri, arial;
+    font-size: 16px;
+    font-weight: 300;
+    width: 100%;
+    color: #fff;
+    overflow: auto;
+    float: left;
+    margin: 0 auto;
+}
+
+#contact-area {
+    margin-left: 3px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+#contact-area input,
+#contact-area textarea {
+    padding: 5px;
+    width: 100%;
+    font-family: 'Lato', calibri, arial;
+    color: whitesmoke;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+#contact-area textarea {
+    height: 150px;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+#contact-area textarea:focus,
+#contact-area input:focus {
+    background-color: whitesmoke;
+    color: #222;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+}
+
+#contact-area input.submit-button {
+    font-family: 'Lato', calibri, arial;
+    font-size: 15px;
+    font-weight: 300;
+    text-transform: uppercase;
+    width: 100px;
+    float: left;
+    background-color: transparent;
+    border-top: 1px solid #fff;
+    border-left: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    float: right;
+    font-weight: bold;
+}
+
+#contact-area input.submit-button:hover {
+    color: #222;
+    background-color: whitesmoke;
+}
+
+::-webkit-input-placeholder {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+::-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+::placeholder {
+    /* Firefox 19+ */
+    font-size: 15px;
+    font-weight: 600;
+}
+
+:-ms-input-placeholder {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+select {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    color: #8E8E8F;
+    ;
+    background-color: transparent;
+    border-top: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid transparent;
+    margin-bottom: 15px;
+}
+
+option {
+    background-color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: transparent;
+}
+
+
+/* pour enlever le trait sous te texte en hover*/
+
+a:hover {
     text-decoration: none;
-    transition: opacity 0.2s ease-out;
-    opacity: 0;
-}
-
-#back-to-top:hover {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #A27232;
-}
-
-#back-to-top.show {
-    opacity: 1;
 }
 
 
-/* NEW UPDATE */
+/*gestion des logos partenaires
 
-.new-update {
-    margin-left: 50%;
-    text-align: center;
+.partenaire {
+    height: 50px;
+    background-color: white !important;
 }
 
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-
-/*
- * Hide visually and from screen readers:
- */
-
-.hidden {
-    display: none !important;
+.partenaires {
+    background-color: white !important;
 }
-
-
-/*
- * Hide only visually, but have it available for screen readers:
- * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-}
-
-
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-}
-
-
-/*
- * Hide visually and from screen readers, but maintain layout
- */
 
 .invisible {
     visibility: hidden;
+}*/
+
+footer {
+    height: 75px;
+    width: 100%;
+    background-color: #222;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    text-transform: uppercase;
 }
 
-
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
-
-.clearfix:before,
-.clearfix:after {
-    content: " ";
-    /* 1 */
-    display: table;
-    /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
+footer p {
+    margin-bottom: 0px;
 }
 
 
@@ -496,7 +515,7 @@ font-family: 'Audiowide', cursive!important;
     *:before,
     *:after {
         background: transparent !important;
-        color: #000 !important;
+        color: #222 !important;
         /* Black prints faster:
                                    http://www.sanbeiji.com/archives/953 */
         box-shadow: none !important;
@@ -552,284 +571,6 @@ font-family: 'Audiowide', cursive!important;
 }
 
 
-/*formulaire de contact*/
-
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,900);
-*:focus {
-    outline: 0;
-}
-
-
-/*html {
-    height: 100%;
-}*/
-
-
-/*body {
-    background: #858d98;
-    /* Old browsers */
-
-
-/*filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#858d98', endColorstr='#4a525d', GradientType=1);
-    /* IE6-9 fallback on horizontal gradient */
-
-
-/*background: -moz-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* FF3.6+ */
-
-
-/*background: -webkit-gradient(radial, top top, 0px, top top, 100%, color-stop(1%, #858d98), color-stop(99%, #4a525d));
-    /* Chrome,Safari4+ */
-
-
-/*background: -webkit-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Chrome10+,Safari5.1+ */
-
-
-/*background: -o-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* Opera 12+ */
-
-
-/*background: -ms-radial-gradient(top, ellipse cover, #858d98 1%, #4a525d 99%);
-    /* IE10+ */
-
-
-/*background: radial-gradient(ellipse at top, #858d98 1%, #4a525d 99%);
-    /* W3C */
-
-
-/*.dim:hover {
-    margin-top: 5px;
-    opacity: 0.8;
-    filter: alpha(opacity=80);
-    /* For IE8 and earlier */
-
-#container {
-    margin: auto;
-    width: 100%;
-    margin-bottom: 50px;
-    overflow: auto;
-}
-
-#demo {
-    width: 300px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 14px;
-    font-weight: 300;
-    padding: 10px;
-    text-align: left;
-    background: none;
-    overflow: auto;
-    float: left;
-    margin-left: 40px;
-    color: #fff;
-}
-
-#demo p {
-    font-family: 'Lato', calibri, arial;
-    font-size: 16px;
-    font-weight: 300;
-    text-align: left;
-    color: #fff;
-}
-
-#demo h1 {
-    font-family: 'Lato', calibri, arial;
-    font-size: 20px;
-    font-weight: 100;
-    text-align: center;
-    text-transform: uppercase;
-}
-
-#demo img {
-    display: block;
-    float: left;
-    margin-right: 10px;
-    border: 0px solid #888;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-}
-
-
-/* Below is the design for the contact form */
-
-#contact-wrap {
-    font-family: 'Lato', calibri, arial;
-    font-size: 16px;
-    font-weight: 300;
-    width: 100%;
-    color: #fff;
-    overflow: auto;
-    float: left;
-    margin:0 auto;
-}
-
-#contact-area {
-    margin-left: 3px;
-    width: 100%;
-    padding: 20px;
-    margin:0 auto;
-}
-
-#contact-area input,
-#contact-area textarea {
-    padding: 5px;
-    width: 100%;
-    font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: #fff;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-    margin-bottom: 15px;
-}
-
-#contact-area textarea {
-    height: 150px;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-}
-
-#contact-area textarea:focus,
-#contact-area input:focus {
-    background-color: #333;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-}
-
-#contact-area input.submit-button {
-    font-family: 'Lato', calibri, arial;
-    font-size: 20px;
-    font-weight: 300;
-    text-transform: uppercase;
-    width: 100px;
-    float: left;
-    background-color: transparent;
-    border-top: 1px solid #fff;
-    border-left: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    -moz-transition: all 0.1s ease-in-out;
-    -webkit-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    -ms-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
-    float: right;
-    font-weight: bold;
-}
-
-#contact-area input.submit-button:hover {
-    color: #fff;
-    background-color: #333;
-}
-
-label {
-    float: left;
-    text-align: left;
-    margin-right: 16px;
-    width: 100px;
-    padding-top: 5px;
-    font-family: 'Lato', calibri, arial;
-    font-size: 18px;
-    font-weight: 300;
-}
-
-::-webkit-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-::-moz-placeholder {
-    /* Firefox 18- */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-::placeholder {
-    /* Firefox 19+ */
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-:-ms-input-placeholder {
-    color: white;
-    font-size: 17px;
-    font-weight: bold;
-}
-
-select {
-    padding: 5px;
-    width: 100%;
-    font-family: 'Lato', calibri, arial;
-    font-size: 17px;
-    font-weight: 300;
-    color: white;
-    background-color: transparent;
-    border-top: 1px solid transparent;
-    border-left: 1px solid transparent;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid transparent;
-    margin-bottom: 15px;
-}
-
-option {
-    background-color: #333;
-}
-
-
-/* pour enlever le trait sous te texte en hover*/
-a:hover {
-    text-decoration: none;
-}
-
-/* gestion des logos partenaires*/
-
-.info {
-    color: white !important;
-    font-size: 18px;
-}
-
-
-
-/* gestion des logos partenaires*/
-.partenaire {
-    height: 50px;
-    background-color: white !important;
-}
-
-.partenaires {
-    background-color: white !important;
-}
-
-.titre {
-    vertical-align: middle;
-    text-align: center;
-    color: white;
-    font-size: 20px;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-}
-
-
--/* CSS DE LA 4EME PAGE*/
-
-
-
-
 /* ##################################################################### */
 
 
@@ -841,11 +582,96 @@ a:hover {
 
 /* Small devices (tablets, 768px and up) */
 
-@media (max-width: 1200px) {
- .adptmap{
-    display: block;
-    margin: 0 auto;
-    width: 85%;
-    margin-top: 30px;
- }
+@media (max-width: 1050px) {
+    [class*="col-"] {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+    
+    .separator-present {
+        display: none;
+    }
+    
+    .section-present {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .block h2 {
+        margin-top: 0px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-bottom: 10px;
+    }
+    
+    .section-present p {
+        padding-left: 40px;
+        padding-right: 40px;
+        margin-bottom: 0px;
+    }
+    
+    .section-present h3 {
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        margin-bottom: 5px;
+    }
+    
+    .block {
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-bottom: 40px;
+    }
+    
+    .participant {
+        width: 50%;
+        margin: 0 auto;
+        margin-top: 10px;
+    }
+    
+    .participant p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    
+    .partenaire {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+}
+    
+    .fourth-div {
+        width: 100%;
+    }
+    
+    .six-wrap {
+        width: 100%;
+    }
+    
+    .eight-div {
+        width: 100%;
+    }
+    
+     .adptmap {
+        display: block;
+        margin: 0 auto;
+        width: 85%;
+        margin-top: 30px;
+         height: 300px;
+         padding-bottom: 50px;
+    }
+    
+    iframe {
+        border: 0px !important;
+    }
+    
+    footer {
+        margin-top: 0px;
+    }
+    
+    footer p {
+        padding-left: 40px;
+        padding-right: 40px;
+        text-align: center;
+    }
 }
