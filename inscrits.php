@@ -36,7 +36,8 @@
 
         
         add($tableau_result,$connexion);
-		echo "Found ", count($tableau_result), " results";
+		echo "Found ", count($tableau_result), " results <br>'";
+        
     }
     catch (PDOException $e){
     	echo 'Echec de la connexion : '.$e->getMessage();
@@ -109,6 +110,7 @@ function add($tableau_result,$connexion){
                         $requete2= $connexion->prepare($sql);
                         $params = array('nom'=>$nom, 'prenom'=>$prenom, 'email'=>$email, 'metier'=>$metier, 'message'=>$message);
                         $requete2->execute($params);
+                        echo "Inscription reussi !!! ";
 
                         print_r($connexion->errorInfo());
 
