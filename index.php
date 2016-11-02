@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hackathon, corp.</title>
+    <title>Hackathon Code Academie Rennes</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -137,14 +137,14 @@
 
                             <input type="text" name="email" id="email" placeholder="Email" />
 
-                            <select id="metier">
-                                <option>Developpeur web</option>
-                                <option>Réferenciel métier </option>
-                                <option>Designer</option>
-                                <option>Big Data</option>
+                            <select name="metier" id="metier">
+                                <option value='Developpeur web'>Developpeur web</option>
+                                <option value='Réferenciel métier'>Réferentiel métier </option>
+                                <option value='Designer'>Designer</option>
+                                <option value='Big Data'>Big Data</option>
                             </select>
 
-                            <textarea name="Message" rows="20" cols="20" id="message" placeholder="Message"></textarea>
+                            <textarea name="message" rows="20" cols="20" id="message" placeholder="Message"></textarea>
 
                             <input type="submit" name="submit" value="GO" class="submit-button" />
                         </form>
