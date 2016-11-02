@@ -1,8 +1,10 @@
     <?php
 
     $serveur="localhost";
-    $login="root";
-    $pass="facesimplon";
+    $login="hackatonien"; //Oui je sais ça aurait été mieux avec un h mais non, voila, c'est tout ! :-b
+    $pass="codehack";
+
+
 
     //Recuperation des champs du formulaire de contact 
    
@@ -12,13 +14,15 @@
     $metier=$_POST['metier'];
     $message=$_POST['message'];
 
+    //Declaration de mes variables en global
+      // tableau qui contient le nombre max de place dispo par metier
     $tabmax= array(
         'Developpeur web' => 10,
         'Big Data'=> 10,
         'Designer'=>10,
         'Referenciel metier'=>10
      );
-
+        // tableau compteur initialisé a 0
     $tabcompteur= array(
         'Developpeur web' => 0,
         'Big Data'=> 0,
@@ -36,7 +40,7 @@
 
         
         add($tableau_result,$connexion);
-		echo "Found ", count($tableau_result), " results <br>'";
+		echo "nombre total d'inscripts ", count($tableau_result), " results <br>";
         
     }
     catch (PDOException $e){
@@ -60,7 +64,7 @@
 
 
 function add($tableau_result,$connexion){
-
+        //Je recupère mes variables globales pour pouvoir les utiliser dans cette fonction
         global $nom, $prenom, $email, $metier, $message, $tabcompteur, $tabmax;
         echo $nom."<br>";
         echo $prenom."<br>";
@@ -80,9 +84,7 @@ function add($tableau_result,$connexion){
 
                     $trouve = false;
                     //3EME ETAPE : vérifier si il n'existe pas encore :
-                        echo "<pre>";
-                        print_r($tableau_result);
-                        echo "</pre>";
+                   
                     foreach($tableau_result as $row){
                         $bd_nom = $row['nom'];
                         $bd_prenom = $row['prenom'];
@@ -92,32 +94,29 @@ function add($tableau_result,$connexion){
 
                         if(($bd_nom == $nom && $bd_prenom== $prenom) || $bd_mail== $email) {
                             $trouve=true;
-                            echo 'Votre participation est déja enregistrée';
+                            echo 'Votre participation est déja enregistrée <br>';
                         }
                     }
 
                     if(!$trouve){
-                            //enregister le participant en pensant a incrementer un compteur.
                             echo "ce participant n'existe pas! YOUPI!!!!<br>";
 
                             // C'est ici que je rappelle la fonction compteur dans la fonction add
                         compteur();
 
                         if ($tabmax[$metier]>$tabcompteur[$metier]){
-
+                            // Insertion dans la BD du nouveau parcipant
                         $sql = "INSERT INTO Inscrits(nom, prenom, email, metier, message) VALUES (:nom,:prenom,:email,:metier,:message)";
-
+                        // Envoi des données
                         $requete2= $connexion->prepare($sql);
                         $params = array('nom'=>$nom, 'prenom'=>$prenom, 'email'=>$email, 'metier'=>$metier, 'message'=>$message);
                         $requete2->execute($params);
                         echo "Inscription reussi !!! ";
 
-                        print_r($connexion->errorInfo());
-
                         }
 
                         else {
-                          echo 'Nous avons déja assez de '.$metier;
+                          echo 'Nous avons déja assez de '.$metier. '<br>';
                         }
 
 
@@ -126,38 +125,27 @@ function add($tableau_result,$connexion){
                    
                
                 else{
-                    echo 'L\'adresse mail ' .$email. ' n\'est pas valide, recommencez !';
+                    echo 'L\'adresse mail ' .$email. ' n\'est pas valide, recommencez ! <br>';
                 }
             }
         }
 
         else {
-            $alerte='Vous n\'avez pas rempli tous les champs';
+            echo 'Vous n\'avez pas rempli tous les champs <br>';
         }
 }
 
 
-
+// fonction pour verifier si il reste de la place pour le metier de l'inscription en cours
 function compteur() {
+    //Je recupère mes variables globales pour pouvoir les utiliser dans cette fonction
     global $tableau_result;
     global $tabmax;
     global $tabcompteur;
-
-    echo "---------------------------<br>";
-    var_dump($tableau_result);
-    echo "---------------------------<br>";
+    // Par rapport au nombre d'inscripts sur un metier 
     foreach ($tableau_result as $key => $row) {
         $tabcompteur[$row['metier']]++;
     }
-     echo "---------------------------<br>";
-     echo "<pre>";
-     print_r($tabcompteur);  
-     echo "</pre>";
-
-     echo "===============================<br>";
-     echo "<pre>";
-     print_r($tabmax);  
-     echo "</pre>";
 
 }
 

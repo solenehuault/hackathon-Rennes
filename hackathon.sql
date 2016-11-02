@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  localhost
--- Généré le :  Mer 02 Novembre 2016 à 14:53
+-- Généré le :  Mer 02 Novembre 2016 à 16:59
 -- Version du serveur :  5.7.12-0ubuntu1
 -- Version de PHP :  7.0.8-0ubuntu0.16.04.3
 
@@ -52,7 +52,11 @@ INSERT INTO `Inscrits` (`id`, `nom`, `prenom`, `email`, `metier`, `message`) VAL
 (20, 'Susset', 'Valentin', 'sussetvalentin@seducteur.com', 'Developpeur web', 'SÃ©ducteur dans lâ€™Ã¢me, adepte de la danse de la sÃ©duction '),
 (21, 'CHETOUI', 'Youness', 'younesschetoui@wesh.com', 'Developpeur web', 'Moi c\'est Youn\'s et je suis trop de la balle!!'),
 (22, 'GUERNON', 'Patrice', 'patrice.guernon@messac.fr', 'Big Data', 'J\'ADORE COURIR APRÃˆS LES ENFANTS LE WEEK END !!! HEHEHEHEHEHEHEH    8===>(y)'),
-(23, 'DUCLOS', 'Erwann', 'thecodeur@profamitemps.com', 'Designer', 'Enseigne le code a des dÃ©biles qui ne savent pas comptÃ© jusquâ€™Ã  10, j\'suis dans la merde, a CAUSE d\'eux j\'ai presque plus de cheveux!!!');
+(23, 'DUCLOS', 'Erwann', 'thecodeur@profamitemps.com', 'Designer', 'Enseigne le code a des dÃ©biles qui ne savent pas comptÃ© jusquâ€™Ã  10, j\'suis dans la merde, a CAUSE d\'eux j\'ai presque plus de cheveux!!!'),
+(24, 'POIRIER', 'Lise', 'poirierlise@gmail.com', 'Designer', 'Et alors!!!!'),
+(25, 'NINJA', 'Nabil', 'nabilninja@caillou.com', 'Designer', 'Attention aux cailloux du Pakistanais'),
+(26, 'MENAGER', 'Ange', 'angemenager@gmail.com', 'Designer', 'Je suis dÃ©veloppeur par aide mÃ©nagÃ¨re !!!! ATTENTION'),
+(27, 'BABAR', 'Celeste', 'celeste.babar@trompe.com', 'Big Data', 'Bah oui Big Data pour un Ã©lÃ©phant Ã§a coule de source ...');
 
 --
 -- Index pour les tables exportées
@@ -72,7 +76,7 @@ ALTER TABLE `Inscrits`
 -- AUTO_INCREMENT pour la table `Inscrits`
 --
 ALTER TABLE `Inscrits`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
