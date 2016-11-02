@@ -90,7 +90,7 @@ function add($tableau_result,$connexion){
                         $bd_metier = $row['metier'];
                     
 
-                        if($bd_nom == $nom && $bd_prenom== $prenom && $bd_mail== $email) {
+                        if(($bd_nom == $nom && $bd_prenom== $prenom) || $bd_mail== $email) {
                             $trouve=true;
                             echo 'Votre participation est déja enregistrée';
                         }
